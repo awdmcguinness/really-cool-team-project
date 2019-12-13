@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Subway Stories</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
 
     <!-- MATERIAL DESIGN LINKS -->
     <link
@@ -26,32 +26,90 @@
       </div>
 
       <div class="numberChoices">
-        <div class="mainNumber">
-          <img class="imageNumber" src="images/1.png" alt="" />
+        <div class="mainNumber" id="oneTrain">
+          <img class="imageNumber" src="assets/images/1.png" alt="One Train" />
         </div>
-        <div class="mainNumber">
-          <img class="imageNumber" src="images/2.png" alt="" />
+        <div class="mainNumber" id="twoTrain">
+          <img class="imageNumber" src="assets/images/2.png" alt="Two Train" />
         </div>
-        <div class="mainNumber">
-          <img class="imageNumber" src="images/3.png" alt="" />
+        <div class="mainNumber" id="threeTrain">
+          <img
+            class="imageNumber"
+            src="assets/images/3.png"
+            alt="Three Train"
+          />
         </div>
       </div>
 
       <div id="oneTrainCard">
-        <div class="northbound"><h2>Northbound</h2></div>
-        <img class="routeImage" src="images/1train.png" alt="1 Train" />
-        <div class="southbound"><h2>Southbound</h2></div>
+        <div class="northbound" id="northbound-one"><h2>Northbound</h2></div>
+        <img class="routeImage" src="assets/images/1train.png" alt="1 Train" />
+        <div class="southbound" id="southbound-one"><h2>Southbound</h2></div>
       </div>
+
       <div id="twoTrainCard">
-        <div class="northbound"><h2>Northbound</h2></div>
-        <img class="routeImage" src="images/2train.png" alt="2 Train" />
-        <div class="southbound"><h2>Southbound</h2></div>
+        <div class="northbound" id="northbound-two"><h2>Northbound</h2></div>
+        <img class="routeImage" src="assets/images/2train.png" alt="2 Train" />
+        <div class="southbound" id="southbound-two"><h2>Southbound</h2></div>
       </div>
+
       <div id="threeTrainCard">
-        <div class="northbound"><h2>Northbound</h2></div>
-        <img class="routeImage" src="images/3train.png" alt="3 Train" />
-        <div class="southbound"><h2>Southbound</h2></div>
+        <div class="northbound" id="northbound-three"><h2>Northbound</h2></div>
+        <img class="routeImage" src="assets/images/3train.png" alt="3 Train" />
+        <div class="southbound" id="southbound-three"><h2>Southbound</h2></div>
+      </div>
+
+      <div id="routeCards">
+        <div id="messageCardOneTrain">
+          <div id="chatOneTrain"></div>
+          <div id="twitterOneTrain">
+            <a
+              class="twitter-timeline"
+              href="https://twitter.com/NYCTSubway?ref_src=twsrc%5Etfw"
+              >Tweets by NYCTSubway</a
+            >
+            <script
+              async
+              src="https://platform.twitter.com/widgets.js"
+              charset="utf-8"
+            ></script>
+          </div>
+        </div>
+
+        <div id="messageCardTwoTrain">
+          <div id="chatOneTrain"></div>
+          <div id="twitterOneTrain">
+            <a
+              class="twitter-timeline"
+              href="https://twitter.com/NYCTSubway?ref_src=twsrc%5Etfw"
+              >Tweets by NYCTSubway</a
+            >
+            <script
+              async
+              src="https://platform.twitter.com/widgets.js"
+              charset="utf-8"
+            ></script>
+          </div>
+        </div>
+
+        <div id="messageCardThreeTrain">
+          <div id="chatOneTrain"></div>
+          <div id="twitterOneTrain">
+            <a
+              class="twitter-timeline"
+              href="https://twitter.com/NYCTSubway?ref_src=twsrc%5Etfw"
+              >Tweets by NYCTSubway</a
+            >
+            <script
+              async
+              src="https://platform.twitter.com/widgets.js"
+              charset="utf-8"
+            ></script>
+          </div>
+        </div>
       </div>
     </div>
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="assets/javascript/app.js"></script>
 </html>
