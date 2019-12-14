@@ -1,49 +1,85 @@
-#oneTrainCard, #twoTrainCard, #threeTrainCard, #messageCardOneTrain, #messageCardTwoTrain, #messageCardThreeTrain {
-    display: none;
+body {
+  font-family: helvetica;
+  background-color: #222;
 }
-
-.backimage {
-    background-color: black
+.mainContainer {
+  background-color: #222;
+  padding: 20px 20px 50px 20px;
+  border: #222 10px solid;
+  box-shadow: 0px 0px 0px 10px white inset;
 }
-
-.maincontainer {
-    border-style: solid;
-    border-width: 15px;
-    border-color: white;
-    margin: 20px;
-    height: auto;
+.header > h1 {
+  font-size: 5rem;
+  padding: 10px 0 10px 0;
+  margin: 10px;
+  text-align: center;
+  color: whitesmoke;
+  text-shadow: 2px 2px 4px #000000;
+  border-bottom: white 5px solid;
 }
-
-h1 {
-    color: white;
-    text-align: center;
-    font-weight: bold;
-    font-size: 200%;
-}
-
 h2 {
-    color: white;
-    text-align: center;
-    font-weight: bold;
-    font-size: 200%;
+  font-size: 6.5rem;
+  margin: 0;
+  padding: 0 50px;
+  color: white;
 }
-
+h3 {
+  font-size: 4rem;
+  margin: 0;
+  padding-top: 15px;
+  color: white;
+}
+h4 {
+  font-size: 2rem;
+  color: wheat;
+  letter-spacing: -1px;
+}
+.pure-g {
+  display: flex;
+  justify-content: center;
+}
 .mainNumber {
-    display: inline-block;
+  background-color: red;
+  border-radius: 50%;
+  border: 10px white solid;
+  margin: 10px;
+  padding: 10px;
+  height: 150px;
+  width: 150px;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 1;
 }
-
-.routeImage {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-
 .numberChoices {
-    text-align: center;
-    padding: 60px;
+  padding: 35px 0 50px 0;
+}
+.header {
+  display: flex;
+  justify-content: center;
+}
+.vl,
+.vlb {
+  border-left: 35px solid red;
+  height: 100px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.vlb {
+  margin-top: -15px;
+  z-index: 0;
+}
+.vl {
+  margin-bottom: -15px;
 }
 
-.imageNumber {
-    height: 125px;
+#oneTrainCard,
+#twoTrainCard,
+#threeTrainCard {
+  display: none;
+}
+.back {
+  display: flex;
+  justify-content: right;
+  padding: 0 5px;
 }
