@@ -68,6 +68,10 @@ h5 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   z-index: 1;
   cursor: pointer;
+}
+#oneTrain,
+#twoTrain,
+#threeTrain {
   opacity: 0.8;
 }
 #oneTrain:hover,
@@ -112,7 +116,38 @@ h5 {
 }
 .weather {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   height: 30px;
   align-items: baseline;
+}
+#currentweather {
+  text-align: right;
+  margin: 0;
+}
+.top {
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0 15px;
+}
+#uberbtn {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #263238;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  color: antiquewhite;
+}
+#uberbtn > a {
+  color: antiquewhite;
+  font-weight: bold;
+}
+#uberbtn:hover > a {
+  color: #263238;
+}
+#uberbtn:hover {
+  background-color: white;
+  color: #263238;
 }
