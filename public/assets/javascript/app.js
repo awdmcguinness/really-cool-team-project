@@ -1,7 +1,5 @@
 // Click events for index.html train images (1, 2, 3)
 
-var selectedLine = "";
-
 $("#oneTrain").click(function() {
   $("#oneTrainCard").css("display", "block");
   $(".numberChoices").css("display", "none");
@@ -22,19 +20,19 @@ $("#threeTrain").click(function() {
 $("#northbound-one").click(function() {
   $("#oneTrainCard").css("display", "none");
   $("#messageCardOneTrain").css("display", "block");
-  selectedLine = "one-northbound";
+  localStorage.setItem("selectedLine", "one-northbound");
 });
 
 $("#northbound-two").click(function() {
   $("#twoTrainCard").css("display", "none");
   $("#messageCardTwoTrain").css("display", "block");
-  selectedLine = "two-northbound";
+  localStorage.setItem("selectedLine", "two-northbound");
 });
 
 $("#northbound-three").click(function() {
   $("#threeTrainCard").css("display", "none");
   $("#messageCardThreeTrain").css("display", "block");
-  selectedLine = "three-northbound";
+  localStorage.setItem("selectedLine", "three-northbound");
 });
 
 // Click events on "Southbound" clicks
@@ -42,17 +40,17 @@ $("#northbound-three").click(function() {
 $("#southbound-one").click(function() {
   $("#oneTrainCard").css("display", "none");
   $("#messageCardOneTrain").css("display", "block");
-  selectedLine = "one-southbound";
+  localStorage.setItem("selectedLine", "one-southbound");
 });
 
 $("#southbound-two").click(function() {
   $("#twoTrainCard").css("display", "none");
   $("#messageCardTwoTrain").css("display", "block");
-  selectedLine = "two-southbound";
+  localStorage.setItem("selectedLine", "two-southbound");
 });
 
 $("#southbound-three").click(function() {
   $("#threeTrainCard").css("display", "none");
   $("#messageCardThreeTrain").css("display", "block");
-  selectedLine = "three-southbound";
+  localStorage.setItem("selectedLine", "three-southbound");
 });

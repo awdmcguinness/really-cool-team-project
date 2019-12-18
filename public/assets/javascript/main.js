@@ -14,15 +14,17 @@
  * limitations under the License.
  */
 "use strict";
+var selectedLine = localStorage.getItem("selectedLine");
+console.log(selectedLine);
 
-// Signs-in Friendly Chat.
+// Signs-in Chat.
 function signIn() {
   // Sign into Firebase using popup auth & Google as the identity provider.
   var provider = new firebase.auth.GoogleAuthProvider();
   firebase.auth().signInWithPopup(provider);
 }
 
-// Signs-out of Friendly Chat.
+// Signs-out of Chat.
 function signOut() {
   // Sign out of Firebase.
   firebase.auth().signOut();
@@ -56,7 +58,7 @@ function saveMessage(messageText) {
   // Add a new message entry to the database.
   return firebase
     .firestore()
-    .collection()
+    .collection(selectedLine)
     .add({
       name: getUserName(),
       text: messageText,
@@ -68,7 +70,7 @@ function saveMessage(messageText) {
     });
 }
 
-/// Loads chat messages history and listens for upcoming ones.
+// Loads chat messages history and listens for upcoming ones.
 function loadMessages() {
   // Create the query to load the last 12 messages and listen for new ones.
   var query = firebase
@@ -160,6 +162,7 @@ function saveMessagingDeviceToken() {
       console.error("Unable to get messaging token.", error);
     });
 }
+
 // Requests permission to show notifications.
 function requestNotificationsPermissions() {
   console.log("Requesting notifications permission...");
@@ -235,7 +238,7 @@ function authStateObserver(user) {
     saveMessagingDeviceToken();
   } else {
     // User is signed out!
-    // Hide user's profile and sign-out button.
+    // Hide user's profile and sign-out button
     userNameElement.setAttribute("hidden", "true");
     userPicElement.setAttribute("hidden", "true");
     signOutButtonElement.setAttribute("hidden", "true");
