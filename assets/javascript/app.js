@@ -61,4 +61,5 @@ $("#backnav").click(function() {
   $("#twoTrainCard").css("display", "none");
   $("#threeTrainCard").css("display", "none");
   $("#backnav").css("display", "none");
+  $("#tweets").css("display", "flex");
 });
