@@ -3,18 +3,21 @@
 $("#oneTrain").click(function() {
   $("#oneTrainCard").css("display", "block");
   $(".numberChoices").css("display", "none");
+  $("#tweets").css("display", "none");
   $("#backnav").css("display", "block");
 });
 
 $("#twoTrain").click(function() {
   $("#twoTrainCard").css("display", "block");
   $(".numberChoices").css("display", "none");
+  $("#tweets").css("display", "none");
   $("#backnav").css("display", "block");
 });
 
 $("#threeTrain").click(function() {
   $("#threeTrainCard").css("display", "block");
   $(".numberChoices").css("display", "none");
+  $("#tweets").css("display", "none");
   $("#backnav").css("display", "block");
 });
 
