@@ -4,7 +4,7 @@ Project 1 for Full-Stack Flex Program
 
 ## Collaborators
 
-Pamela Vasquez [@PamelaVasquez](https://github.com/PamelaVasquez)
+Pamela Vasquez [@pamelv](https://github.com/pamelv)
 
 Anthony McGuinness [@awdmcguinness](https://github.com/awdmcguinness)
 
