@@ -1,13 +1,27 @@
-## really-cool-team-project
+# Subway Series
+- A social app to find the best way from point A to B in NYC. Chat with other Metro riders about delays, see current weather, follow the NYC Metro Twitter, or order an Uber all in app. 
+- Columbia University Website Development Bootcamp, Project 1
 
-Project 1 for Full-Stack Flex Program
+# Preview
+- [GIF for app overivew](https://media.giphy.com/media/W36PI9WdZlymes27Mg/giphy.gif)
 
-## Collaborators
+# App Overview
+- Go to [Subway Series](https://subway-stories-3e972.web.app/) to use. 
+- You'll need a Google account to login and message on the app. 
 
-Pamela Vasquez [@PamelaVasquez](https://github.com/PamelaVasquez)
+# Techology Used
+- HTML
+- CSS
+  - MDL
+  - Google Fonts
+- JavaScript
+- jQuery
+- Firebase
+- Weather.com API
 
-Anthony McGuinness [@awdmcguinness](https://github.com/awdmcguinness)
+# Collaborators
 
-Edward Hill @edwardphill
-
-Alvaro Ormeno @alvaroormeno
+- Pamela Vasquez [@PamelaVasquez](https://github.com/PamelaVasquez)
+- Anthony McGuinness [@awdmcguinness](https://github.com/awdmcguinness)
+- Edward Hill [@edwardphill](https://edwardphill.github.io/)
+- Alvaro Ormeno [@alvaroormeno](https://github.com/alvaroormeno)
